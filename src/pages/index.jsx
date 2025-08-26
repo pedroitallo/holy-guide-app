@@ -22,29 +22,29 @@ import coins from "./coins";
 
 import chat from "./chat";
 
-import dream-analysis from "./dream-analysis";
+import DreamAnalysisPage from "./dream-analysis";
 
-import love-compatibility from "./love-compatibility";
+import LoveCompatibilityPage from "./love-compatibility";
 
-import love-advice from "./love-advice";
+import LoveAdvicePage from "./love-advice";
 
-import fast-energy-cleansing from "./fast-energy-cleansing";
+import FastEnergyCleansingPage from "./fast-energy-cleansing";
 
 import revelations from "./revelations";
 
-import coin-history from "./coin-history";
+import CoinHistoryPage from "./coin-history";
 
-import onboarding from "./onboarding";
+import OnboardingPage from "./onboarding";
 
-import mydivine from "./mydivine";
+import MyDivinePage from "./mydivine";
 
-import letterday from "./letterday";
+import LetterDayPage from "./letterday";
 
-import magic from "./magic";
+import MagicPage from "./magic";
 
-import horoscope from "./horoscope";
+import HoroscopePage from "./horoscope";
 
-import managepayments from "./managepayments";
+import ManagePaymentsPage from "./managepayments";
 
 import help from "./help";
 
@@ -75,29 +75,29 @@ const PAGES = {
     
     chat: chat,
     
-    dream-analysis: dream-analysis,
+    "dream-analysis": DreamAnalysisPage,
     
-    love-compatibility: love-compatibility,
+    "love-compatibility": LoveCompatibilityPage,
     
-    love-advice: love-advice,
+    "love-advice": LoveAdvicePage,
     
-    fast-energy-cleansing: fast-energy-cleansing,
+    "fast-energy-cleansing": FastEnergyCleansingPage,
     
     revelations: revelations,
     
-    coin-history: coin-history,
+    "coin-history": CoinHistoryPage,
     
-    onboarding: onboarding,
+    onboarding: OnboardingPage,
     
-    mydivine: mydivine,
+    mydivine: MyDivinePage,
     
-    letterday: letterday,
+    letterday: LetterDayPage,
     
-    magic: magic,
+    magic: MagicPage,
     
-    horoscope: horoscope,
+    horoscope: HoroscopePage,
     
-    managepayments: managepayments,
+    managepayments: ManagePaymentsPage,
     
     help: help,
     
@@ -151,29 +151,29 @@ function PagesContent() {
                     
                     <Route path="/chat" element={<chat />} />
                     
-                    <Route path="/dream-analysis" element={<dream-analysis />} />
+                    <Route path="/dream-analysis" element={<DreamAnalysisPage />} />
                     
-                    <Route path="/love-compatibility" element={<love-compatibility />} />
+                    <Route path="/love-compatibility" element={<LoveCompatibilityPage />} />
                     
-                    <Route path="/love-advice" element={<love-advice />} />
+                    <Route path="/love-advice" element={<LoveAdvicePage />} />
                     
-                    <Route path="/fast-energy-cleansing" element={<fast-energy-cleansing />} />
+                    <Route path="/fast-energy-cleansing" element={<FastEnergyCleansingPage />} />
                     
                     <Route path="/revelations" element={<revelations />} />
                     
-                    <Route path="/coin-history" element={<coin-history />} />
+                    <Route path="/coin-history" element={<CoinHistoryPage />} />
                     
-                    <Route path="/onboarding" element={<onboarding />} />
+                    <Route path="/onboarding" element={<OnboardingPage />} />
                     
-                    <Route path="/mydivine" element={<mydivine />} />
+                    <Route path="/mydivine" element={<MyDivinePage />} />
                     
-                    <Route path="/letterday" element={<letterday />} />
+                    <Route path="/letterday" element={<LetterDayPage />} />
                     
-                    <Route path="/magic" element={<magic />} />
+                    <Route path="/magic" element={<MagicPage />} />
                     
-                    <Route path="/horoscope" element={<horoscope />} />
+                    <Route path="/horoscope" element={<HoroscopePage />} />
                     
-                    <Route path="/managepayments" element={<managepayments />} />
+                    <Route path="/managepayments" element={<ManagePaymentsPage />} />
                     
                     <Route path="/help" element={<help />} />
                     
