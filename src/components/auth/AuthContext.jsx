@@ -13,7 +13,19 @@ export function AuthProvider({ children }) {
                 const currentUser = await User.me();
                 setUser(currentUser);
             } catch (error) {
-                setUser(null);
+                // Auto-login for development
+                const mockUser = {
+                    id: 'user_' + Date.now(),
+                    email: 'user@example.com',
+                    full_name: 'Spiritual Seeker',
+                    coins: 10,
+                    is_premium: false,
+                    role: 'user',
+                    created_date: new Date().toISOString(),
+                    last_login_date: new Date().toISOString()
+                };
+                localStorage.setItem('user_data', JSON.stringify(mockUser));
+                setUser(mockUser);
             } finally {
                 setLoading(false);
             }

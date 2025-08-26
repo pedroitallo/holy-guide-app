@@ -1,8 +1,5 @@
-import { createClient } from '@base44/sdk';
-// import { getAccessToken } from '@base44/sdk/utils/auth-utils';
-
-// Create a client with authentication required
-export const base44 = createClient({
+// Simple client configuration for the app
+export const appConfig = {
   appId: "688921c0fcef3790376fdc81", 
-  requiresAuth: true // Ensure authentication is required for all operations
-});
+  apiUrl: process.env.VITE_API_URL || 'http://localhost:3000/api'
+};

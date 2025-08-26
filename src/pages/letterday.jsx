@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { TarotCard } from "@/api/entities";
 import { DailyCardDraw } from "@/api/entities";
+import { initializeMockData } from "@/data/mockData";
 import { format } from "date-fns";
 
 export default function LetterDayPage() {
@@ -17,6 +18,7 @@ export default function LetterDayPage() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    initializeMockData();
     loadData();
   }, []);
 

@@ -49,6 +49,7 @@ import managepayments from "./managepayments";
 import help from "./help";
 
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { AuthProvider } from '@/components/auth/AuthContext';
 
 const PAGES = {
     
@@ -121,62 +122,64 @@ function PagesContent() {
     const currentPage = _getCurrentPage(location.pathname);
     
     return (
-        <Layout currentPageName={currentPage}>
-            <Routes>            
-                
-                    <Route path="/" element={<admin />} />
-                
-                
-                <Route path="/admin" element={<admin />} />
-                
-                <Route path="/home" element={<home />} />
-                
-                <Route path="/reading" element={<reading />} />
-                
-                <Route path="/journey" element={<journey />} />
-                
-                <Route path="/guide" element={<guide />} />
-                
-                <Route path="/profile" element={<profile />} />
-                
-                <Route path="/feedback" element={<feedback />} />
-                
-                <Route path="/journeys" element={<journeys />} />
-                
-                <Route path="/chats" element={<chats />} />
-                
-                <Route path="/coins" element={<coins />} />
-                
-                <Route path="/chat" element={<chat />} />
-                
-                <Route path="/dream-analysis" element={<dream-analysis />} />
-                
-                <Route path="/love-compatibility" element={<love-compatibility />} />
-                
-                <Route path="/love-advice" element={<love-advice />} />
-                
-                <Route path="/fast-energy-cleansing" element={<fast-energy-cleansing />} />
-                
-                <Route path="/revelations" element={<revelations />} />
-                
-                <Route path="/coin-history" element={<coin-history />} />
-                
-                <Route path="/onboarding" element={<onboarding />} />
-                
-                <Route path="/mydivine" element={<mydivine />} />
-                
-                <Route path="/letterday" element={<letterday />} />
-                
-                <Route path="/magic" element={<magic />} />
-                
-                <Route path="/horoscope" element={<horoscope />} />
-                
-                <Route path="/managepayments" element={<managepayments />} />
-                
-                <Route path="/help" element={<help />} />
-                
-            </Routes>
-        </Layout>
+        <AuthProvider>
+            <Layout currentPageName={currentPage}>
+                <Routes>            
+                    
+                        <Route path="/" element={<home />} />
+                    
+                    
+                    <Route path="/admin" element={<admin />} />
+                    
+                    <Route path="/home" element={<home />} />
+                    
+                    <Route path="/reading" element={<reading />} />
+                    
+                    <Route path="/journey" element={<journey />} />
+                    
+                    <Route path="/guide" element={<guide />} />
+                    
+                    <Route path="/profile" element={<profile />} />
+                    
+                    <Route path="/feedback" element={<feedback />} />
+                    
+                    <Route path="/journeys" element={<journeys />} />
+                    
+                    <Route path="/chats" element={<chats />} />
+                    
+                    <Route path="/coins" element={<coins />} />
+                    
+                    <Route path="/chat" element={<chat />} />
+                    
+                    <Route path="/dream-analysis" element={<dream-analysis />} />
+                    
+                    <Route path="/love-compatibility" element={<love-compatibility />} />
+                    
+                    <Route path="/love-advice" element={<love-advice />} />
+                    
+                    <Route path="/fast-energy-cleansing" element={<fast-energy-cleansing />} />
+                    
+                    <Route path="/revelations" element={<revelations />} />
+                    
+                    <Route path="/coin-history" element={<coin-history />} />
+                    
+                    <Route path="/onboarding" element={<onboarding />} />
+                    
+                    <Route path="/mydivine" element={<mydivine />} />
+                    
+                    <Route path="/letterday" element={<letterday />} />
+                    
+                    <Route path="/magic" element={<magic />} />
+                    
+                    <Route path="/horoscope" element={<horoscope />} />
+                    
+                    <Route path="/managepayments" element={<managepayments />} />
+                    
+                    <Route path="/help" element={<help />} />
+                    
+                </Routes>
+            </Layout>
+        </AuthProvider>
     );
 }
 

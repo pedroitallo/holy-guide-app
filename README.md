@@ -1,8 +1,6 @@
-# Base44 App
+# HolyGuide Spiritual App
 
-
-This app was created automatically by Base44.
-It's a Vite+React app that communicates with the Base44 API.
+A spiritual guidance application built with Vite and React, featuring tarot readings, spiritual advisors, and personal growth tools.
 
 ## Running the app
 
@@ -17,4 +15,15 @@ npm run dev
 npm run build
 ```
 
-For more information and support, please contact Base44 support at app@base44.com.
+## Features
+
+- Daily spiritual readings and horoscopes
+- Chat with spiritual advisors
+- Tarot card readings
+- Dream analysis
+- Energy cleansing rituals
+- Personal spiritual journey tracking
+
+## Development Notes
+
+This app uses mock data and localStorage for development. In production, you would replace the mock entities and functions with actual API calls to your backend services.
